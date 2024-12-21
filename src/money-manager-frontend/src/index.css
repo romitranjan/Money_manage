@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Add your custom base styles below */
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  
+  body {
+    @apply bg-gray-50;
+  }
+}
+
+/* Optional: Add your custom components below */
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-500;
+  }
+}
+
+/* Optional: Add your custom utilities below */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
